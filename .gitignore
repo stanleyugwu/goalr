@@ -1,0 +1,6 @@
+*.lock.json
+.env
+node_modules 
+assets/
+public
+build

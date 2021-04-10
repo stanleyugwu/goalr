@@ -1,0 +1,18 @@
+{
+  "name": "goalr",
+  "version": "1.0.0",
+  "description": "Sweet goal manager app",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "goalr",
+    "goal-manager",
+    "sweet-goal",
+    "frontend",
+    "backend"
+  ],
+  "author": "Devvie",
+  "license": "MIT"
+}
