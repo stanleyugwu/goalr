@@ -1,0 +1,11 @@
+.title::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+    background-color: var(--primary);
+    left: -55px;
+    top: 0px;
+}
