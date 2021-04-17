@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/server.bundle.js",
-    "build": "webpack",
-    "dev": "npm run build && npm start"
+    "start": "npm run build:dev && node build/server.bundle.js",
+    "build:dev": "webpack --mode development",
+    "build": "webpack --mode prodution"
   },
   "author": "Devvie",
   "license": "ISC",

@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import Home from '../frontend/src/pages/ssr/Home';
+import Home from '../frontend/src/pages/Homepage/Home';
 import StyleContext from 'isomorphic-style-loader/StyleContext';
 
 //init app
@@ -13,6 +13,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use('/assets', express.static('../frontend/public/assets'));
+app.use('/static', express.static('../frontend/public/static'))
 
 app.get('/',(req, res) => {
 
@@ -29,7 +30,7 @@ app.get('/',(req, res) => {
     </StyleContext.Provider>
     );
 
-    res.render('index', {css:[...css], body:body})
+    res.render('index', {css:[...css].join(''), body:body, script:'/static/index.js'})
 });
 
 app.get('/abbrev/abbrev.js', (req,res) => {
