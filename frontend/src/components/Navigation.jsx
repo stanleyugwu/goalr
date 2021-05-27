@@ -12,7 +12,16 @@ export default (props) => {
     return (
         <nav>
             <ul>
-                {links.map((item, idx) => <li className="d-inline" key={idx}><a href={item.url} className="p-3 text-cta">{item.text}</a></li>)}
+                {links.map((item, idx) => (
+                <li className="d-inline" key={idx}>
+                    <a
+                        href={item.url}
+                        className={item.text == 'Login' ? 'p-3 px-4 text-bg font-weight-bold bg-cta rounded-pill' : 'p-3 text-cta font-weight-bold'}
+                    >
+                        {item.text}
+                    </a>
+                </li>)
+                )}
             </ul>
         </nav>
     )

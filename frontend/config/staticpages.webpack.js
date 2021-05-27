@@ -56,7 +56,7 @@ module.exports = {
         liveReload:true,
         contentBase: [
             path.join(__dirname, '../public'),
-            path.join(__dirname, '../public/assets'),
+            // path.join(__dirname, '../public/assets'),
             // path.join(__dirname,'../public/static')
         ],
         watchContentBase:true,

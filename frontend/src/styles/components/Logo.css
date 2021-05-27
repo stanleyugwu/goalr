@@ -1,3 +1,4 @@
-.logo img{
+.logo{
+    display: none;
     backface-visibility: hidden;
 }

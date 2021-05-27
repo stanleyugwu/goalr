@@ -1,3 +1,6 @@
 .header{
-    background: url('../../assets/images/header-goal.png');
+    background-image: url('../../assets/images/header-goal.png');
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-clip: content-box;
 }
