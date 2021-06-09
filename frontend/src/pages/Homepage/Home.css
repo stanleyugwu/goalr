@@ -2,16 +2,6 @@ body{
     overflow-x: hidden;
 }
 
-.title_wrapper{
-    background: url('../../assets/images/header-goal1.png') right no-repeat;
-    background-blend-mode: overlay;
-}
-
-.title{
-    color: #FAEED6;
-    text-shadow: 0 4px #241717;
-}
-
 .content_wrapper{
     position: relative;
 }
@@ -35,3 +25,70 @@ body{
 .pitch-text{
     position: relative;
 }
+
+header nav ul li a:hover{
+    text-decoration:none;
+    border-bottom: 2px solid var(--cta);
+}
+
+/* STEPPER STYLING */
+.step{
+    position: relative;
+    min-height: 1em;
+}
+/* .step > div:first-child {
+    position: static;
+    height: 0;
+} */
+/* .step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+} */
+.step.step-active {
+    color: #4285f4
+}
+.step.step-active .circle {
+    background-color: #4285f4;
+}
+/* Circle */
+.circle {
+    line-height: 1.5em;
+    border-radius: 100%;
+    width:3em;
+    height: 3em;
+}
+/* Step count */
+.circle > *:first-child {
+    line-height: 1.9;
+    font-family: 'Lato','Lato Light';
+    margin:none;
+}
+/* Vertical Line */
+@media screen and (max-width:576px){
+.circle:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        top: 1px;
+        right: 50%;
+        bottom: 1px;
+        left: 50%;
+        height: 100%;
+        width: 1px;
+        transform: scale(1, 2);
+        transform-origin: 50% -100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: -1;
+    }
+}
+  
+  .step:last-child .circle:after {
+    display: none
+  }
+  
+  /* Stepper Titles */
+  .title {
+    line-height: 1.5em;
+    font-weight: bold;
+  }
+  

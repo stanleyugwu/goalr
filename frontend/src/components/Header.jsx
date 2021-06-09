@@ -8,7 +8,7 @@ import s from '../styles/components/Header.css';
 const Header = (props) => {
 
     return(
-        <header id='page-header' className={s.header + ' bg-primary p-0'}>
+        <header id='page-header' className={s.header + ' bg-primary p-0 shadow-sm'}>
             <div className="header_inner pt-2 pl-5 pr-5">
 
                 {/* Top Navigation Menu */}
@@ -17,7 +17,7 @@ const Header = (props) => {
                         <Logo/>
                     </div>
                     <div className="menu-wrapper col-sm-4 col-md-9 col-lg-9 text-right pt-3 p-0">
-                        <Nav/>
+                        <Nav location='header'/>
                     </div>
                 </div>
 

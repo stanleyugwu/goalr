@@ -1,11 +1,15 @@
-import Logo from '../assets/images/logo.png';
+import logoImage from '../assets/images/logo.png';
 import React from 'react';
+import withStyles from 'isomorphic-style-loader/withStyles';
+
 import s from '../styles/components/Logo.css';
 
-export default () => {
+const Logo = () => {
     return (
         <div className={s.logo}>
-            <img src={Logo} alt="Goalrx Logo" className="img-responsive logo-img" width="100" height="50"/>
+            <img src={logoImage} alt="Goalr Logo" className={s.logo_image+" img-responsive"}/>
         </div>
     );
 }
+
+export default withStyles(s)(Logo)

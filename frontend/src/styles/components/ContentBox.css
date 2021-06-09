@@ -1,0 +1,15 @@
+.contentWrapper{
+    display: block;
+}
+
+.underline{
+    height:3px;
+    max-height: 3px;
+    max-width: 150px;
+}
+
+.imageStyle{
+    max-width:500px;
+    width: 100%;
+    height: auto;
+}

@@ -13,7 +13,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use('/assets', express.static('../frontend/public/assets'));
-app.use('/static', express.static('../frontend/public/static'))
+app.use('/static', express.static('../frontend/public/static'));
 
 app.get('/',(req, res) => {
 

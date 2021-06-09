@@ -1,4 +1,8 @@
 .logo{
-    display: none;
     backface-visibility: hidden;
+}
+.logo_image{
+    width:100%;
+    height: auto;
+    max-width: 160px;
 }

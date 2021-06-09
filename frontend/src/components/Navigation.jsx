@@ -13,10 +13,11 @@ export default (props) => {
         <nav>
             <ul>
                 {links.map((item, idx) => (
-                <li className="d-inline" key={idx}>
+                <li className={"d-inline"} key={idx}>
                     <a
+                        id="menu-link"
                         href={item.url}
-                        className={item.text == 'Login' ? 'p-3 px-4 text-bg font-weight-bold bg-cta rounded-pill' : 'p-3 text-cta font-weight-bold'}
+                        className={item.text == 'Login' && props.location == 'header' ? 'p-3 px-4 text-bg bg-cta rounded-pill' : 'p-3 text-cta'}
                     >
                         {item.text}
                     </a>
