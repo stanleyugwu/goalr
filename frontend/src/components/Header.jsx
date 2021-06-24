@@ -7,8 +7,16 @@ import s from '../styles/components/Header.css';
 
 const Header = (props) => {
 
+    //props destructure
+    const {headerImage} = props;
+
+    //header style
+    const headerStyle = {
+        backgroundImage:headerImage ? `url(${headerImage})` : null,
+    }
+
     return(
-        <header id='page-header' className={s.header + ' bg-primary p-0 shadow-sm'}>
+        <header id='page-header' className={s.header + ' bg-primary p-0 shadow-sm'} style={headerStyle}>
             <div className="header_inner pt-2 pl-5 pr-5">
 
                 {/* Top Navigation Menu */}

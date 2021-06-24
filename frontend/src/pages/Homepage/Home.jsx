@@ -2,6 +2,8 @@ import React, {Fragment} from 'react';
 import withStyles from 'isomorphic-style-loader/withStyles';
 import s from './Home.css';
 
+import tile from '../../assets/images/favicon.png';
+import headerImage from '../../assets/images/header_images/home_banner.png';
 import smartImage from '../../assets/images/features/ft1.png';
 import controlImage from '../../assets/images/features/ft2.png';
 import privacyImage from '../../assets/images/features/ft3.png';
@@ -19,11 +21,12 @@ const css = (styles) => {
     return styleInliner(s,styles)
 }
 
+
 const Home = (props) => {
     return (
         <Fragment>
-            <Header>
-                <div className={css`pitch-text col-lg-6 col-md-8 mt-2 col-sm-12 col-xs-12`}>
+            <Header headerImage={headerImage}>
+                <div className={css`pitch-text col-12`}>
                     <h2 className={css`first-heading text-light`}>
                         Set and Achieve goals the right way,
                     </h2>

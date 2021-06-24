@@ -2,10 +2,10 @@ import React from "react";
 
 const links = [
     {'text':'Home','url':'/'},
-    {'text':'About','url':'/about'},
-    {'text':'Contact','url':'/contact'},
-    {'text':'Privacy-Policy','url':'/pp'},
-    {'text':'Login','url':'/sign-in-up'},
+    {'text':'About','url':'/about.html'},
+    {'text':'Contact','url':'/contact.html'},
+    {'text':'Privacy-Policy','url':'/pp.html'},
+    {'text':'Login','url':'/sign-in-up.html'},
 ];
 
 export default (props) => {
